@@ -32,7 +32,11 @@ public class addActivity extends AppCompatActivity {
 
                 MyDatabaseHelper myDatabaseHelper=new MyDatabaseHelper(addActivity.this);
 
-                myDatabaseHelper.add();
+               String bookname = authorName.getText().toString().trim();
+               String writtername =bookTitle.getText().toString().trim();
+               int coutpage=Integer.valueOf(pageNumber.getText().toString().trim());
+
+                myDatabaseHelper.add(bookname,writtername,coutpage);
 
 
             }

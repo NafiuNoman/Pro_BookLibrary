@@ -48,7 +48,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     }
 
-    public void add()
+    public void add(String title_name,String title_author,int pages)
 
     {
         SQLiteDatabase database = this.getWritableDatabase();
@@ -57,9 +57,9 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         //not working beacuse i was put this line of code it will set row =-1  beacuse its autoincrement and we dont need to gives its value
         // contentValues.put("-id",1);
 
-        contentValues.put("book_title","harry potter");
-        contentValues.put("book_author","koana");
-        contentValues.put("book_pages",400);
+        contentValues.put("book_title",title_name);
+        contentValues.put("book_author",title_author);
+        contentValues.put("book_pages",pages);
 
         Long row= database.insert("my_library",null,contentValues);
         

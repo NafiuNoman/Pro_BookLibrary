@@ -7,6 +7,7 @@ import android.content.ContentValues;
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         btn = findViewById(R.id.btn);
         view = findViewById(R.id.recyclerView);
 
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
                 Intent intent= new Intent(MainActivity.this,addActivity.class);
                 startActivity(intent);
+
+                LayoutInflater layoutInflater= getLayoutInflater();
 
 
 

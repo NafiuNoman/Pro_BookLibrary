@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">youBookLibrary</string>
+
+    <string-array name="pic_con">
+        <item>elephant</item>
+        <item>parrot</item>
+        <item>dinoser</item>
+        <item>hippo</item>
+        <item>limer</item>
+
+
+    </string-array>
 </resources>
